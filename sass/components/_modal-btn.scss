@@ -1,0 +1,32 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 528px;
+    height: 581px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: all 250ms linear 250ms;
+
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0);
+        transition: all 250ms linear 0ms;
+    }
+    
+    &-btn {
+        margin-bottom: 200px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        background: #2196F3;
+        min-width: 200px;
+        height: 50px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        padding: 10px 20px;
+    }
+}

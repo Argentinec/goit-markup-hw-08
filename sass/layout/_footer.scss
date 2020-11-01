@@ -1,0 +1,168 @@
+.footer-section {
+    background: #2F303A;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .contact-footer {
+    margin-right: 70px;
+  }
+  
+  .logo-footer {
+    color: #FFFFFF;
+    
+    .footer-section & {
+      display: flex;
+      padding-top: 60px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .contact-list {
+    display: inline-block;
+    padding-bottom: 60px;
+    
+    &-item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    
+    &-link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.714;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+      
+      &-address {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color: #FFFFFF
+      }
+    }
+  }
+
+.social {
+    &-title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.143;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      color: #FFFFFF;
+    }
+    
+    &-footer {
+      width: 206px;
+      height: 80px;
+      padding-top: 72px;
+      padding-bottom: 100px;
+      
+      &-list {
+       display: flex;
+      }
+      
+      &-list-item:not(:last-child) {
+        margin-right: 10px;
+      }
+      
+      &-list-link{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 44px;
+       height: 44px;
+       border-radius: 50%;
+       background :rgba(255, 255, 255, 0.1);
+       transition: all 250ms timing-function;
+      }
+      
+      &-list-svg {
+        width: 20px;
+        height: 20px;
+        fill: #FFFFFF;
+      }
+      
+      &-list-link:hover,
+      &-list-link:focus {
+        background-color: $accent-color;
+      }
+    }
+}
+
+.mailing {
+    padding-top: 72px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    
+    &-title {
+      display: block;
+      font-family: $main-font;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.143;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding-bottom: 20px;
+    }
+    
+    &-input {
+      width: 358px;
+      height: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-sizing: border-box;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      padding: 16px 15px;
+      font-family: $main-font;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+      background-color: transparent;
+    }
+    
+    &-button {
+      display: flex;
+      align-items: center;
+      padding-left: 29px;
+      width: 200px;
+      height: 50px;
+      background: #2196F3;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      font-family: $main-font;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.875px;
+      letter-spacing: 0.06em;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+  }
+  
+  .form-mailing {
+      display: flex;
+      align-content: center;
+      
+  }
+  
+  .mail-field {
+    margin-right: 12px;
+  }
+  
+  .button-send {
+      position: relative;
+  }
+  
+  .send {
+      position: absolute;
+      top: 13px;
+      right: 28px;
+      width: 24px;
+      height: 24px;
+  }

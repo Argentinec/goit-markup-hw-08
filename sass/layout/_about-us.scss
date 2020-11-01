@@ -1,0 +1,37 @@
+.about {
+    &-section-section {
+       padding-bottom: 94px;
+    }
+    
+    &-list {
+       display: flex;
+       justify-content: space-between;
+       
+       &-item {
+         position: relative;
+       }
+    }
+}
+
+.label{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &-text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.03em;
+    
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
