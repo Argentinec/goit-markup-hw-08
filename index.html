@@ -12,23 +12,35 @@
 
 <body>
     <!--HEADER-->
-    <header class="header">
+    <header class="header ">
         <div class="container">
             <nav class="navigation">
                 <a class="logo link" href="./index.html"> <span class="color-logo">Web</span>Studio</a>
+                <button type="button" class="button-header is-open" aria-expanded="false" data-menu-button>
+                    <svg 
+                    width="40" 
+                    height="40"
+                    aria-label="Переключатель мобильного меню"
+                    >
+                        <use class="icon-close-header" href="./images/sprite.svg#icon-close-header"></use>
+                        <use class="icon-menu-header" href="./images/sprite.svg#icon-menu-header"></use>
+                    </svg>
+                </button>
+               <div class="menu-container" data-menu> 
                 <ul class="navigation-list">
-                  <li class="navigation-list-item list">
-                      <a class="navigation-list-link current link" href="./index.html">Студия</a>
-                  </li>
-                  <li class="navigation-list-item list">
-                      <a class="navigation-list-link link" href="./portfolio.html"> Портфолио</a>
-                  </li>
-                  <li class="navigation-list-item list">
-                      <a class="navigation-list-link link" href=""> Контакты</a>
-                  </li>
-                </ul>
+                    <li class="navigation-list-item list">
+                        <a class="navigation-list-link current link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="navigation-list-item list">
+                        <a class="navigation-list-link link" href="./portfolio.html"> Портфолио</a>
+                    </li>
+                    <li class="navigation-list-item list">
+                        <a class="navigation-list-link link" href=""> Контакты</a>
+                    </li>
+                  </ul>
+                </div>
             </nav>
-            <address class="address">
+            <!--<address class="address">
                 <ul class="adress-links">
                     <li class="adress-links-item list">
                         <a class="header-address-link link header-mail " href="mailto:info@devstudio.com">
@@ -48,10 +60,10 @@
             </address>
         </div>
     </header>
-
+-->
     <main>
         <!--HERO-->
-        <section class="hero">
+       <section class="hero">
             <div class="container">
                 <h1 class="hero-title ">Эффективные решения для вашего бизнеса</h1>
                 <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
@@ -60,7 +72,7 @@
         
         
         <!--FEUTER-->
-        <section class="feauter-section-section">
+        <!--<section class="feauter-section-section">
            <div class="container">
              <h2 class="feauter-title-hidden visually-hidden">Особенности</h2>
              <ul class="feauter-list list">
@@ -83,9 +95,9 @@
              </ul>
            </div>
         </section>
-
+    -->
         <!--ABOUT US -->
-        <section class="about-section-section">
+       <!-- <section class="about-section-section">
             <div class="container">
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="about-list list">
@@ -110,9 +122,9 @@
                 </ul>
             </div>
         </section>
-
+-->
         <!--OUR TEAM--> 
-        <section class="team-section">
+        <!--<section class="team-section">
             <div class="container">
                 <h2 class="title">Наша команда</h2>
                 <ul class="team-list list">
@@ -259,9 +271,9 @@
                 </ul>
             </div>
         </section>
-
+    -->
         <!--CLIENT-->
-        <section class="client">
+        <!--<section class="client">
             <div class="container">
                 <h2 class="title">Постоянные клиенты</h2>
                 <ul class="client-list list">
@@ -313,9 +325,9 @@
 
         </section>
     </main>
-
+-->
     <!--FOOTER-->
-    <footer class="footer-section">
+    <!--<footer class="footer-section">
         <div class="container">
             <div class="contact-footer">
                 <a class="logo-footer link" href="./index.html"> <span class="color-logo">Web</span>Studio</a>
@@ -332,9 +344,9 @@
                     </li>
                 </ul>
             </address>
-            </div>
+            </div>-->
             <!--SOCIAL-FOOTER-->
-            <div class="social-footer">
+            <!--<div class="social-footer">
                 <h3 class="social-title">Присоединяйтесь</h3>
                 <ul class="social-footer-list list">
                     <li class="social-footer-list-item">
@@ -366,9 +378,9 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div>-->
             <!--MAILING-->
-            <div class="mailing">
+            <!--<div class="mailing">
                 <h3 class="mailing-title">Подпишитесь на рассылку</h3>
                 <form class="form-mailing" >
                      <div class="mail-field">
@@ -385,7 +397,7 @@
             </div>
         </div>
     </footer>
-
+-->
     <!--MODAL-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -433,6 +445,7 @@
         </div>
     </div>
 
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 
