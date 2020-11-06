@@ -1,4 +1,27 @@
 .logo {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+    color: #000000;
+    display: block;
+  }
+  
+  .color-logo {
+    color: #2196F3;
+  }
+
+@media screen and (min-width: 1200px) {
+    .logo {
+      font-size: 26px;
+      line-height: 1.192;
+      letter-spacing: 0.03em;
+    }
+}
+
+/*
+.logo {
     color: #000000;
     margin-right: 94px;
 }

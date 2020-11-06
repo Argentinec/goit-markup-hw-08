@@ -1,12 +1,16 @@
 .container {
   padding:0 15px;
-}
+  margin: 0 auto;
 
+  .footer-section & {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin: 0 auto;
   }
 }
 
@@ -14,24 +18,31 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+
+    .header & {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-
-    .header & {
-      display: flex;
-      align-items: center;
-    }
-    
-    .footer-section & {
-      display: flex;
-      flex-direction: row;
-    }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*.container {
@@ -50,4 +61,3 @@
   }
 }
 
-*/
