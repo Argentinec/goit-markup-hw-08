@@ -1,4 +1,113 @@
-.feaute {
+.feauter  {
+  &-section-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &-title {
+    margin-bottom: 10px;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 120px;
+      background-color: #F5F4FA;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 4px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+
+  &-description:not(:last-child) {
+    padding-bottom: 30px;
+  }
+}
+
+.feauter-list {
+  &-item{
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+      
+.feauter-title::before
+
+.icon{
+  &-antena .feauter-title::before {
+    background-image: url(../images/feauter/antenna1.svg);
+  }
+
+  &-clock::before {
+    background-image: url(../images/feauter/clock2.svg);
+  }
+
+  &-vector::before {
+    background-image: url(../images/feauter/vector3.svg);
+  }
+
+  &-astronaut::before {
+     background-image: url(../images/feauter/astronaut4.svg);   
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .feauter-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      width: 354px;
+
+      &:not(:nth-child(2n)) {
+        margin-right: 30px;
+      }
+
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+      }
+
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feauter-section-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .feauter-list {
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      width: 270px;
+    }
+  }
+}
+
+/*.feaute {
     &-section-section {
       padding-top: 94px;
       padding-bottom: 94px
@@ -47,7 +156,7 @@
 
 .icon{
     &-antena::before {
-      background-image: url(../images/feauter/antenna1.svg);
+      background-image: url("../images/feauter/antenna1.svg");
     }
 
     &-clock::before {
@@ -61,4 +170,4 @@
     &-astronaut::before {
        background-image: url(../images/feauter/astronaut4.svg);   
     }
-}
+}*/

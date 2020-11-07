@@ -1,4 +1,38 @@
-.title {
+@media screen and (max-width: 1199px) {
+    .title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.179;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.167;
+        letter-spacing: 0.03em;
+        color: #212121;
+        text-align: center;
+        
+        .about-section-section & {
+            display: flex;
+            padding-bottom: 50px;
+            justify-content: center;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+/*.title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.167;
@@ -24,3 +58,4 @@
        justify-content: center;
     }
 }
+*/
