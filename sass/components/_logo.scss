@@ -1,16 +1,24 @@
-.logo {
+.logo,
+.color-logo,
+.logo-footer {
     font-family: $secondary-font;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.167;
     letter-spacing: 0.03em;
-    color: #000000;
-    display: block;
-  }
+}
+
+.logo {
+  color:#000000;
+}
   
-  .color-logo {
+.color-logo {
     color: #2196F3;
-  }
+}
+
+.logo-footer {
+  color: #ffffff;
+}
 
 @media screen and (min-width: 1200px) {
     .logo {

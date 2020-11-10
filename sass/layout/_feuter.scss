@@ -47,12 +47,28 @@
     &:not(:last-child) {
       margin-bottom: 30px;
     }
+
+    &:first-child .feauter-title::before {
+      background-image: url(../images/feauter/antenna1.svg);
+    }
+
+    &:nth-child(2) .feauter-title::before {
+      background-image: url(../images/feauter/clock2.svg);
+    }
+
+    &:nth-child(3) .feauter-title::before {
+      background-image: url(../images/feauter/vector3.svg);
+    }
+
+    &:last-child .feauter-title::before {
+      background-image: url(../images/feauter/astronaut4.svg);
+    }
   }
 }
       
-.feauter-title::before
 
-.icon{
+
+/*.icon{
   &-antena .feauter-title::before {
     background-image: url(../images/feauter/antenna1.svg);
   }
@@ -69,7 +85,7 @@
      background-image: url(../images/feauter/astronaut4.svg);   
   }
 
-}
+}*/
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .feauter-list {

@@ -80,15 +80,15 @@
     border: none;
     background-color: transparent;
 
-    & .icon-close-header {
+    & .icon-menu-header  {
       display: none;
     }
-
-    & .is-open .icon-close-header {
+    
+    &.is-open .icon-menu-header {
       display: block;
     }
-
-    & .is-open .icon-menu-header {
+    
+    &.is-open .icon-close-header {
       display: none;
     }
 
@@ -254,3 +254,21 @@
     transform: translate(50%, 800%);
   }
 }
+/*  & .icon-close-header {
+      display: none;
+    }
+
+    & .is-open .icon-close-header {
+      display: block;
+    }
+
+    & .is-open .icon-menu-header {
+      display: none;
+    }
+
+    &:hover .icon-menu-header,
+    &:focus .icon-menu-header,
+    &:hover .icon-close-header,
+    &:focus .icon-close-header {
+      fill: $accent-color;
+    }*/

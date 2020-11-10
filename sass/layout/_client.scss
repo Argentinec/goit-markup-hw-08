@@ -84,16 +84,19 @@
     .client {
       padding-top: 94px;
       padding-bottom: 94px;
-    }
 
-    & .title {
+      & .title {
         margin-bottom: 50px;
-    }
+      }
 
-    &-item {
+      &-item {
         width: calc((100% - 12 * 15px) / 6);
+      }
     }
 }
+
+    
+
 
 /*.client {
     padding-top: 94px;
