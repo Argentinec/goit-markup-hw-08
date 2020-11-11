@@ -6,7 +6,6 @@
 
 
 .navigation-list-link {
-  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -14,8 +13,8 @@
   color: #212121;
   transition: color 250ms $timing-function;
 
-  &-link:hover,
-  &-link:focus {
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 }
@@ -35,9 +34,9 @@
 }
 
 .current::after {
+  position: absolute;
   content: "";
   display: block;
-  position: absolute;
   bottom: 0;
   right: 50%;
   transform: translate(50%, 200%);
